@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 68" width="1280" height="68" role="img" aria-label="CONTRIBUTION CITY">
+<title>CONTRIBUTION CITY</title>
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#A78BFA"/><stop offset=".5" stop-color="#22D3EE" stop-opacity=".5"/><stop offset="1" stop-color="#22D3EE" stop-opacity="0"/></linearGradient><linearGradient id="t" x1="0" x2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#DDD6FE"/></linearGradient></defs>
+<style>@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style>
+
+<text x="2" y="20" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', Consolas, 'Courier New', monospace" font-size="13" letter-spacing="4" fill="#22D3EE">05 / CITY</text>
+<text x="0" y="56" font-family="Inter, 'SF Pro Display', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="32" font-weight="800" fill="url(#t)" textLength="374" lengthAdjust="spacing">CONTRIBUTION CITY</text>
+<rect x="402" y="46" width="878" height="1.5" fill="url(#g)"/>
+<rect x="402" y="43" width="6" height="7" rx="1.5" fill="#A78BFA"/>
+</svg>

@@ -1,0 +1,54 @@
+name: Update profile cards
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-commit
+  cancel-in-progress: false
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          # Push as the PAT owner when GH_PAT exists (see SETUP.md, "keep-alive")
+          token: ${{ secrets.GH_PAT || github.token }}
+
+      - name: Stats card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_border=true&bg_color=0B0B12&title_color=A78BFA&text_color=E4E4E7&icon_color=22D3EE&ring_color=7C3AED&border_radius=18&include_all_commits=true
+          path: profile/stats.svg
+          token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+
+      - name: Top languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&hide_border=true&bg_color=0B0B12&title_color=A78BFA&text_color=E4E4E7&border_radius=18&size_weight=0.5&count_weight=0.5
+          path: profile/top-langs.svg
+          token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+
+      - name: Streak card
+        uses: DenverCoder1/github-readme-streak-stats@v1
+        with:
+          options: user=${{ github.repository_owner }}&hide_border=true&background=0B0B12&border_radius=18&ring=7C3AED&fire=10B981&currStreakNum=E4E4E7&sideNums=E4E4E7&currStreakLabel=A78BFA&sideLabels=A1A1AA&dates=A1A1AA&disable_animations=true
+          path: profile/streak.svg
+          token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/
+          git commit -m "chore: update profile cards" || exit 0
+          git pull --rebase
+          git push

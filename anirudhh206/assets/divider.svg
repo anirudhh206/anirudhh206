@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 24" width="1280" height="24" role="img" aria-label="Section divider">
+<title>Section divider</title>
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#7C3AED" stop-opacity="0"/><stop offset=".3" stop-color="#A78BFA"/><stop offset=".7" stop-color="#22D3EE"/><stop offset="1" stop-color="#22D3EE" stop-opacity="0"/></linearGradient><filter id="gl" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="4"/></filter></defs>
+<style>@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style>
+
+<rect x="0" y="11.5" width="1280" height="1" fill="url(#g)" opacity=".7"/>
+<rect x="636.0" y="8" width="8" height="8" fill="#0B0B12" stroke="#A78BFA" transform="rotate(45 640.0 12)"/>
+<g><circle r="6" fill="#22D3EE" filter="url(#gl)"/><circle r="2.4" fill="#fff"/>
+<animateMotion dur="9s" repeatCount="indefinite" path="M0 12 H1280"/></g>
+</svg>

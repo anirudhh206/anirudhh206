@@ -1,0 +1,39 @@
+name: Keep alive
+
+# GitHub disables scheduled workflows after 60 days without repository activity.
+# Pushes made with the default GITHUB_TOKEN may not count, so this job makes one
+# small commit a month using your GH_PAT, which does count as real activity.
+
+on:
+  schedule:
+    - cron: "23 5 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-commit
+  cancel-in-progress: false
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          token: ${{ secrets.GH_PAT || github.token }}
+
+      - name: Warn if GH_PAT is missing
+        if: env.HAS_PAT != 'true'
+        env:
+          HAS_PAT: ${{ secrets.GH_PAT != '' }}
+        run: echo "::warning::GH_PAT is not set. This commit may not reset GitHub's 60-day inactivity timer."
+
+      - name: Empty keep-alive commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit --allow-empty -m "chore: keep scheduled workflows alive"
+          git pull --rebase
+          git push

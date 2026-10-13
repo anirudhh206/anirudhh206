@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 300" width="1280" height="300" role="img" aria-label="Focus areas: Quant, Crypto and Blockchain, ML and AI">
+<title>Focus areas: Quant, Crypto and Blockchain, ML and AI</title>
+<defs><filter id="blur" x="-60%" y="-120%" width="220%" height="340%"><feGaussianBlur stdDeviation="70"/></filter><filter id="blurS" x="-60%" y="-120%" width="220%" height="340%"><feGaussianBlur stdDeviation="28"/></filter><filter id="glow" x="-20%" y="-60%" width="140%" height="220%"><feGaussianBlur stdDeviation="12"/></filter><filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><clipPath id="pclip"><rect width="400" height="300" rx="22"/></clipPath><linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
+<style>@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style>
+
+<g transform="translate(0,0)">
+  <rect width="400" height="300" rx="22" fill="#0B0B12"/>
+  <ellipse cx="70" cy="20" rx="150" ry="90" fill="#A78BFA" opacity=".30" filter="url(#blur)" clip-path="url(#pclip)"/>
+  <rect width="400" height="300" rx="22" fill="url(#sheen)"/>
+  <rect x=".5" y=".5" width="399" height="299" rx="21.5" fill="none" stroke="#fff" stroke-opacity=".10"/>
+  <g transform="translate(34,30)"><line x1="6" y1="22" x2="6" y2="60" stroke="#A78BFA" stroke-width="2" opacity="0.55"/><rect x="0" y="30" width="12" height="22" rx="3" fill="#A78BFA" opacity="0.4675"/><line x1="24" y1="6" x2="24" y2="52" stroke="#A78BFA" stroke-width="2" opacity="0.9"/><rect x="18" y="14" width="12" height="30" rx="3" fill="#A78BFA" opacity="0.765"/><line x1="42" y1="14" x2="42" y2="54" stroke="#A78BFA" stroke-width="2" opacity="0.7"/><rect x="36" y="22" width="12" height="24" rx="3" fill="#A78BFA" opacity="0.595"/><line x1="60" y1="-2" x2="60" y2="48" stroke="#A78BFA" stroke-width="2" opacity="1"/><rect x="54" y="6" width="12" height="34" rx="3" fill="#A78BFA" opacity="0.85"/></g>
+  <text x="366" y="52" text-anchor="end" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', Consolas, 'Courier New', monospace" font-size="13" letter-spacing="3" fill="#A1A1AA">01</text>
+  <text x="34" y="144" font-family="Inter, 'SF Pro Display', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#E4E4E7">Quant</text>
+  <rect x="34" y="158" width="38" height="3" rx="1.5" fill="#A78BFA"/>
+  <circle cx="38" cy="191" r="3" fill="#A78BFA"/><text x="54" y="196" font-family="Inter, 'SF Pro Display', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#A1A1AA">Systematic strategies &amp; backtesting</text><circle cx="38" cy="223" r="3" fill="#A78BFA"/><text x="54" y="228" font-family="Inter, 'SF Pro Display', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#A1A1AA">Pricing, risk &amp; portfolio math</text><circle cx="38" cy="255" r="3" fill="#A78BFA"/><text x="54" y="260" font-family="Inter, 'SF Pro Display', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#A1A1AA">Market data &amp; execution systems</text>
+</g>
+<g transform="translate(440,0)">
+  <rect width="400" height="300" rx="22" fill="#0B0B12"/>
+  <ellipse cx="70" cy="20" rx="150" ry="90" fill="#22D3EE" opacity=".30" filter="url(#blur)" clip-path="url(#pclip)"/>
+  <rect width="400" height="300" rx="22" fill="url(#sheen)"/>
+  <rect x=".5" y=".5" width="399" height="299" rx="21.5" fill="none" stroke="#fff" stroke-opacity=".10"/>
+  <g transform="translate(34,30)"><polygon points="39.3,24.0 39.3,44.0 22.0,54.0 4.7,44.0 4.7,24.0 22.0,14.0" fill="none" stroke="#22D3EE" stroke-width="3" stroke-linejoin="round"/><polygon points="67.3,24.0 67.3,44.0 50.0,54.0 32.7,44.0 32.7,24.0 50.0,14.0" fill="#22D3EE" fill-opacity=".18" stroke="#22D3EE" stroke-width="3" stroke-linejoin="round"/></g>
+  <text x="366" y="52" text-anchor="end" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', Consolas, 'Courier New', monospace" font-size="13" letter-spacing="3" fill="#A1A1AA">02</text>
+  <text x="34" y="144" font-family="Inter, 'SF Pro Display', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#E4E4E7">Crypto &amp; Blockchain</text>
+  <rect x="34" y="158" width="38" height="3" rx="1.5" fill="#22D3EE"/>
+  <circle cx="38" cy="191" r="3" fill="#22D3EE"/><text x="54" y="196" font-family="Inter, 'SF Pro Display', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#A1A1AA">Solana programs in Rust (Pinocchio)</text><circle cx="38" cy="223" r="3" fill="#22D3EE"/><text x="54" y="228" font-family="Inter, 'SF Pro Display', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#A1A1AA">Stablecoin payments &amp; DeFi credit</text><circle cx="38" cy="255" r="3" fill="#22D3EE"/><text x="54" y="260" font-family="Inter, 'SF Pro Display', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#A1A1AA">Onchain settlement &amp; agents</text>
+</g>
+<g transform="translate(880,0)">
+  <rect width="400" height="300" rx="22" fill="#0B0B12"/>
+  <ellipse cx="70" cy="20" rx="150" ry="90" fill="#10B981" opacity=".30" filter="url(#blur)" clip-path="url(#pclip)"/>
+  <rect width="400" height="300" rx="22" fill="url(#sheen)"/>
+  <rect x=".5" y=".5" width="399" height="299" rx="21.5" fill="none" stroke="#fff" stroke-opacity=".10"/>
+  <g transform="translate(34,30)"><line x1="6" y1="12" x2="36" y2="20" stroke="#10B981" stroke-opacity=".5" stroke-width="1.6"/><line x1="6" y1="12" x2="36" y2="48" stroke="#10B981" stroke-opacity=".5" stroke-width="1.6"/><line x1="6" y1="34" x2="36" y2="20" stroke="#10B981" stroke-opacity=".5" stroke-width="1.6"/><line x1="6" y1="34" x2="36" y2="48" stroke="#10B981" stroke-opacity=".5" stroke-width="1.6"/><line x1="6" y1="56" x2="36" y2="20" stroke="#10B981" stroke-opacity=".5" stroke-width="1.6"/><line x1="6" y1="56" x2="36" y2="48" stroke="#10B981" stroke-opacity=".5" stroke-width="1.6"/><line x1="36" y1="20" x2="66" y2="34" stroke="#10B981" stroke-opacity=".5" stroke-width="1.6"/><line x1="36" y1="48" x2="66" y2="34" stroke="#10B981" stroke-opacity=".5" stroke-width="1.6"/><circle cx="6" cy="12" r="5.5" fill="#10B981"/><circle cx="6" cy="34" r="5.5" fill="#10B981"/><circle cx="6" cy="56" r="5.5" fill="#10B981"/><circle cx="36" cy="20" r="5.5" fill="#10B981"/><circle cx="36" cy="48" r="5.5" fill="#10B981"/><circle cx="66" cy="34" r="5.5" fill="#10B981"/></g>
+  <text x="366" y="52" text-anchor="end" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', Consolas, 'Courier New', monospace" font-size="13" letter-spacing="3" fill="#A1A1AA">03</text>
+  <text x="34" y="144" font-family="Inter, 'SF Pro Display', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#E4E4E7">ML &amp; AI</text>
+  <rect x="34" y="158" width="38" height="3" rx="1.5" fill="#10B981"/>
+  <circle cx="38" cy="191" r="3" fill="#10B981"/><text x="54" y="196" font-family="Inter, 'SF Pro Display', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#A1A1AA">AI agents with onchain execution</text><circle cx="38" cy="223" r="3" fill="#10B981"/><text x="54" y="228" font-family="Inter, 'SF Pro Display', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#A1A1AA">Credit &amp; risk modelling</text><circle cx="38" cy="255" r="3" fill="#10B981"/><text x="54" y="260" font-family="Inter, 'SF Pro Display', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#A1A1AA">Confidential compute (TEE) pipelines</text>
+</g>
+</svg>
